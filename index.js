@@ -36,7 +36,7 @@ const startServer = async (port) => {
         const [resource, id] = segments;
 
         if (req.method === "GET" && resource === "comedians") {
-          handleComediansRequest(req, res, comedians, id);
+          handleComediansRequest (res, comedians, id);
           return;
         }
 
@@ -46,7 +46,7 @@ const startServer = async (port) => {
         }
 
         if (req.method === "GET" && resource === "clients" && id) {
-          handleClientsRequest(req, res, id);
+          handleClientsRequest(res, id);
           return;
         }
 

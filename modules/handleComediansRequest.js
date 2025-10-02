@@ -1,6 +1,6 @@
 import { sendData, sendError } from "./send.js";
 
-export const handleComediansRequest = async (req, res, comedians, id) => {
+export const handleComediansRequest = async (res, comedians, id) => {
   if (id) {
     const comedian = comedians.find((c) => c.id === id);
 
